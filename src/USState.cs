@@ -8,7 +8,7 @@ namespace Soenneker.Enums.States.US;
 /// </summary>
 [PublicOpenApiObject]
 [Intellenum<string>]
-public partial class USState
+public sealed partial class USState
 {
     /// <summary>Alabama</summary>
     public static readonly USState AL = new("AL");
