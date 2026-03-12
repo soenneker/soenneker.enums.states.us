@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Enums.States.US.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Enums.States.US\Soenneker.Enums.States.US.csproj" />
     </ItemGroup>
 
     <ItemGroup>
