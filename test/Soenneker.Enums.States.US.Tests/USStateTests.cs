@@ -1,10 +1,9 @@
-﻿using Xunit;
 
 namespace Soenneker.Enums.States.US.Tests;
 
 public sealed class USStateTests
 {
-    [Fact]
+    [Test]
     public void Default()
     {
 
