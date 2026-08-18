@@ -4,7 +4,7 @@ using Soenneker.Attributes.PublicOpenApiObject;
 namespace Soenneker.Enums.States.US;
 
 /// <summary>
-/// A  simple, standardized enum representing all U.S. states and territories using their two-letter postal abbreviations. Ideal for validation, storage, and display logic in location-based applications.
+/// Identifies a U.S. state by its two-letter postal abbreviation for address validation, storage, and display.
 /// </summary>
 [PublicOpenApiObject]
 [EnumValue<string>]
