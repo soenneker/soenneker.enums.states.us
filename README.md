@@ -3,11 +3,16 @@
 [![](https://img.shields.io/nuget/dt/soenneker.enums.states.us.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.enums.states.us/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.enums.states.us/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.enums.states.us/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Enums.States.US
-### A  simple, standardized enum representing all U.S. states and territories using their two-letter postal abbreviations. Ideal for validation, storage, and display logic in location-based applications.
+# Soenneker.Enums.States.US
 
-## Installation
+Identifies a U.S. state by its two-letter postal abbreviation for address validation, storage, and display.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Enums.States.US
 ```
+
+## What you get
+
+- `USState` — Identifies a U.S. state by its two-letter postal abbreviation for address validation, storage, and display.
