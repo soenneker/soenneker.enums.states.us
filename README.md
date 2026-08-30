@@ -5,7 +5,7 @@
 
 # Soenneker.Enums.States.US
 
-Identifies a U.S. state by its two-letter postal abbreviation for address validation, storage, and display.
+A string-backed enum-value type containing the two-letter postal abbreviations for the 50 U.S. states.
 
 ## Install
 
@@ -13,6 +13,20 @@ Identifies a U.S. state by its two-letter postal abbreviation for address valida
 dotnet add package Soenneker.Enums.States.US
 ```
 
-## What you get
+## Usage
 
-- `USState` — Identifies a U.S. state by its two-letter postal abbreviation for address validation, storage, and display.
+```csharp
+using Soenneker.Enums.States.US;
+
+USState state = USState.TX;
+string postalCode = state.Value; // "TX"
+
+if (USState.TryFromValue(input, out USState? parsed))
+{
+    // parsed is one of the shared state instances
+}
+```
+
+Every defined value uses the same uppercase two-letter text for its C# member name and wire value. Lookup is case-sensitive, so normalize user input deliberately if lowercase codes should be accepted. `System.Text.Json` serializes the value as a string. `FromValue` throws for unknown input; use `TryFromValue` when accepting addresses. `FromName` and `TryFromName` are also generated.
+
+The set contains the 50 states only. It does not contain the District of Columbia, U.S. territories, military postal regions, or freely associated states. This package does not validate an address, ZIP code, state/ZIP relationship, deliverability, or residency, and it does not provide full state display names.
